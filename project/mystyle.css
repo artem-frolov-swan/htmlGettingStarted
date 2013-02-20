@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 30px 30px 0 30px;
+	min-width: 800px;
+}
+h1, p {
+	margin: 0;
+	font-family: "Veranda";
+}
+
+header, footer, nav, article {
+	display: block;
+}
+header, footer  {	
+	margin: 0 0 30px 0;
+	min-width: 800px;
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+	   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+			box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+header {
+	background-image: url(header1.jpg);
+	background-position: 50% top;
+	background-repeat: no-repeat;
+	height: 370px;
+}
+footer {
+	padding: 30px 30px 0 30px;
+
+}
+
+nav {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+p.title {
+	font-size: 18px;
+	font-weight:bold;
+}
+p.message {
+	font-size: 18px;
+}
+.list_of_comments {
+	min-width: 830px;
+	margin: 0 0 30px 0;
+	padding: 30px 30px 0 30px;
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+.comment {
+	padding: 10px 10px 0 10px;
+	min-width: 800px;
+	position: relative;
+	margin: 0 0 30px 0;
+	min-height: 200px;
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+.avatar {
+	margin: 10px;
+	width: 150px;
+	height: 180px;
+	position: absolute;
+	background-image: url(avatar.jpg);
+	background-size: 150px 180px;
+	top: 0;
+	left: 0;
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+.comment_title {
+	padding: 5px 10px 5px 10px;
+	margin: 0 260px 10px 160px;
+	min-width: 380px;
+	max-height: 20px;
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+.comment_message {
+	padding: 10px 15px 10px 15px;
+	margin: 0 40px 10px 160px;
+	min-width: 560px;
+	border: 1px solid #C0C0C0;
+	-webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+.comment_close {
+	margin: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url(close_comment.jpg);
+	background-size: 30px 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	-webkit-transition: opacity;
+	   -moz-transition: opacity;
+			transition: opacity;
+	-webkit-transition-duration: 0,1s;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+			border-radius: 10px;
+}
+
+.comment:hover .comment_close {
+	opacity: 1;
+}
+
+*/
