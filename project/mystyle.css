@@ -1,13 +1,16 @@
+@font-face {
+    font-family: "Segoe WP-Semilight";
+    src: url(font/SegoeWP-Semilight.ttf) format("truetype");
+}
 body {
 	margin: 0;
 	padding: 0;
 	min-width: 800px;
 }
-h1,h2,h3,h4,h5,h6 p {
+h1,h2,h3,h4,h5,h6, p {
 	margin: 0;
-	font-family: Segoe WP,sans-serif ;
+	font-family: "Segoe WP-Semilight",sans-serif ;
 }
-
 
 header, footer, nav ,article, aside, section, .container {	
 	display: block;
@@ -35,16 +38,16 @@ footer {
 
 }
 nav {
-background: rgb(100,181,234); /* Old browsers */
-background: -moz-linear-gradient(left,  rgba(100,181,234,1) 0%, rgba(39,61,100,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(100,181,234,1)), color-stop(100%,rgba(39,61,100,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* IE10+ */
-background: linear-gradient(to right,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64b5ea', endColorstr='#273d64',GradientType=1 ); /* IE6-9 */
-background-position: 50% top;
-	height: 50px;
+	background: rgb(100,181,234); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(100,181,234,1) 0%, rgba(39,61,100,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(100,181,234,1)), color-stop(100%,rgba(39,61,100,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(100,181,234,1) 0%,rgba(39,61,100,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64b5ea', endColorstr='#273d64',GradientType=1 ); /* IE6-9 */
+	background-position: 50% top;
+	height: 60px;
 }
 aside{
 	min-width:200px;
@@ -53,8 +56,31 @@ aside{
 .container {
 
 }
+.nav {
+	margin: 5px;
+	padding: 5px;
+}
+.nav p{
+	font-size: 30px;
+	color: #ffffff;
+}
+.nav p small{
+	font-size: 15px;
+}
+.nav-title{
+	height: 40px;
+}
+img.icon {
+	background-image: url(dark/appbar.base.png);
+	
 
-
+}
+.place-left {
+	height: 40px;
+	background-size: 40px;
+	float: left !important;
+	margin-right: 10px;
+}
 
 
 
