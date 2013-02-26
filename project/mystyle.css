@@ -8,6 +8,13 @@ body {
 	min-width: 800px;
 	font-family: "Segoe WP-Semilight",sans-serif ;
 }
+h1, h2, h3, h4, h5, h6, p, ul li, ol li , a{
+	margin: 0;
+	font-family: "Segoe WP-Semilight",sans-serif ;
+}
+a:hover {
+	cursor: pointer;
+}
 .global_container{
 	margin: auto;
 	padding: 0;
@@ -20,12 +27,6 @@ body {
 	right: 0;
 	
 }
-h1, h2, h3, h4, h5, h6, p, ul li, ol li , a{
-	margin: 0;
-	font-family: "Segoe WP-Semilight",sans-serif ;
-	color: #ffffff;
-}
-
 header, footer, nav ,article, aside, section, .container {	
 	display: block;
 	margin: 0;
@@ -69,6 +70,7 @@ nav {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64b5ea', endColorstr='#273d64',GradientType=1 ); /* IE6-9 */
 	background-position: 50% top;
 	height: 60px;
+	color: #ffffff;
 }
 nav .nav {
 	margin: 5px;
@@ -141,9 +143,7 @@ ul.menu > li:hover > .dropdown-menu{
 	color: #000000;
 }
 
-a:hover {
-	cursor: pointer;
-}
+
 
 
 
