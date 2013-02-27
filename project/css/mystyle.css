@@ -103,7 +103,7 @@ nav .nav > ul.menu > li {
 img.icon {
 	background-image: url(../images/dark/appbar.base.png);
 }
-.place-left {
+img.place-left {
 	height: 40px;
 	background-size: 40px;
 	float: left !important;
@@ -121,7 +121,7 @@ img.icon {
 	width: 1px;
 	border-right: 1px #ffffff solid;
 }
-.dropdown-menu {
+ul.dropdown-menu {
 	color: #000;
 	position: absolute;
 	background-color: #ffffff;
@@ -140,10 +140,12 @@ img.icon {
 ul.menu > li:hover > .dropdown-menu{
 	display: block;
 }
-.dropdown-menu > li  > a{
+ul.dropdown-menu > li  > a{
 	color: #000000;
 }
-
+ul.dropdown-menu > li.hover {
+	background-color
+}  
 
 
 
