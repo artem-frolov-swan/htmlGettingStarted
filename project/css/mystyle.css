@@ -46,7 +46,7 @@ header h1{
 	position: absolute;
 	top: 15%;
 	left: 10%;
-	color: white;
+	color: #ffffff;
 	text-shadow: 0 0 6px black
 }
 footer {
@@ -100,7 +100,10 @@ nav .nav > ul.menu > li {
 	position: relative;
 	font-size: 30px;
 }
-img.icon {
+img.icon-light {
+	background-image: url(../images/light/appbar.base.png);
+}
+img.icon-dark {
 	background-image: url(../images/dark/appbar.base.png);
 }
 img.place-left {
@@ -108,7 +111,6 @@ img.place-left {
 	background-size: 40px;
 	float: left !important;
 	margin-right: 10px;
-	
 }
 .divider {
 	position: relative;
@@ -122,7 +124,7 @@ img.place-left {
 	border-right: 1px #ffffff solid;
 }
 ul.dropdown-menu {
-	color: #000;
+	color: #000000;
 	position: absolute;
 	background-color: #ffffff;
 	margin-left: 0;
@@ -132,9 +134,8 @@ ul.dropdown-menu {
 	float: left;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	min-width: 160px;
-	padding-bottom: 5px;
-	padding-top: 5px;
+	min-width: 200px;
+	padding: 5px 1px;
 	display: none;
 }
 ul.menu > li:hover > .dropdown-menu{
@@ -142,12 +143,37 @@ ul.menu > li:hover > .dropdown-menu{
 }
 ul.dropdown-menu > li  > a{
 	color: #000000;
+	display: block;
+	height: 42px;
+	margin-right: 5px;
 }
-ul.dropdown-menu > li.hover {
-	background-color
+ul.dropdown-menu > li:hover > a{
+	color: #ffffff;
+	
+}
+ul.dropdown-menu > li:hover {
+	background-color: #4ea6ea;
 }  
-
-
+ul.dropdown-menu > li:hover > a > .list-mark{
+	display: block;
+} 
+img.dropdown-list-image {
+	height: 40px;
+	background-size: 40px;
+	background-color: #ffffff;
+	float: left !important;
+	margin:0;
+	border: 1px solid #ffffff;
+}
+.list-mark {
+	float: left !important;
+	background-size: 12px 42px;
+	background-image: url(../images/list-mark2.png);
+	width: 12px;
+	height: 42px;
+	display: none;
+	margin-right: 5px;
+}
 
 
 
