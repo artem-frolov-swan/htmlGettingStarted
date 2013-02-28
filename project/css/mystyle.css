@@ -10,7 +10,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6, p, ul li, ol li , a{
 	margin: 0;
-	font-family: "Segoe WP-Semilight",sans-serif ;
+	padding: 0;
 }
 a:hover {
 	cursor: pointer;
@@ -41,7 +41,7 @@ header {
 	background-repeat: no-repeat;
 	height: 370px;
 }
-header h1{
+header > h1{
 	font-size: 50px;
 	position: absolute;
 	top: 15%;
@@ -49,16 +49,10 @@ header h1{
 	color: #ffffff;
 	text-shadow: 0 0 6px black
 }
-footer {
 
-}
-aside{
-	min-width:200px;
-	width: 200px;
-}
-.container {
 
-}
+
+
 nav {
 	background: rgb(100,181,234); /* Old browsers */
 	background: -moz-linear-gradient(left,  rgba(100,181,234,1) 0%, rgba(39,61,100,1) 100%); /* FF3.6+ */
@@ -79,12 +73,22 @@ nav .nav {
 nav .nav  > .nav-title{
 	height: 40px;
 	width: 305px;
-	float: left !important;;
+	float: left !important;
 }
-nav .nav  > .nav-title > p{
+nav .nav  > .nav-title > span.title-icon {
+	background-image: url(../images/light/appbar.base.png), url(../images/light/appbar.people.png);
+	background-repeat: no-repeat;
+	height: 40px;
+	width:40px;
+	background-size: 40px;
+	float: left !important;
+	margin-right: 10px;
+	display: block;
+}
+nav .nav  > .nav-title > p {
 	font-size: 30px;
 }
-nav .nav  > .nav-title  > p > small{
+nav .nav  > .nav-title  > p > small {
 	font-size: 15px;
 }
 nav .nav > ul.menu {
@@ -100,19 +104,7 @@ nav .nav > ul.menu > li {
 	position: relative;
 	font-size: 30px;
 }
-img.icon-light {
-	background-image: url(../images/light/appbar.base.png);
-}
-img.icon-dark {
-	background-image: url(../images/dark/appbar.base.png);
-}
-img.place-left {
-	height: 40px;
-	background-size: 40px;
-	float: left !important;
-	margin-right: 10px;
-}
-.divider {
+nav .nav > .divider {
 	position: relative;
 	margin: 5px 20px ;
 	line-height: 30px;
@@ -123,7 +115,7 @@ img.place-left {
 	width: 1px;
 	border-right: 1px #ffffff solid;
 }
-ul.dropdown-menu {
+nav .nav > ul.menu > li > ul.dropdown-menu {
 	color: #000000;
 	position: absolute;
 	background-color: #ffffff;
@@ -134,38 +126,46 @@ ul.dropdown-menu {
 	float: left;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-	min-width: 200px;
+	width: 200px;
 	padding: 5px 1px;
 	display: none;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
-ul.menu > li:hover > .dropdown-menu{
+nav .nav > ul.menu > li:hover > ul.dropdown-menu{
 	display: block;
 }
-ul.dropdown-menu > li  > a{
+nav .nav > ul.menu > li > ul.dropdown-menu > li  > a{
 	color: #000000;
 	display: block;
 	height: 42px;
 	margin-right: 5px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
 }
-ul.dropdown-menu > li:hover > a{
+nav .nav > ul.menu > li > ul.dropdown-menu > li:hover > a{
 	color: #ffffff;
-	
 }
-ul.dropdown-menu > li:hover {
+nav .nav > ul.menu > li > ul.dropdown-menu > li:hover {
 	background-color: #4ea6ea;
 }  
-ul.dropdown-menu > li:hover > a > .list-mark{
+nav .nav > ul.menu > li > ul.dropdown-menu > li:hover > a > span.list-mark{
 	display: block;
 } 
-img.dropdown-list-image {
+nav .nav > ul.menu > li > ul.dropdown-menu > li  > a > span.dropdown-list-image {
 	height: 40px;
+	width: 40px;
+	background-image: url(../images/dark/appbar.base.png), url(../images/dark/appbar.music.png);
 	background-size: 40px;
 	background-color: #ffffff;
 	float: left !important;
-	margin:0;
+	margin: 0;
 	border: 1px solid #ffffff;
+	display: block;
 }
-.list-mark {
+nav .nav > ul.menu > li > ul.dropdown-menu > li  > a > span.list-mark {
 	float: left !important;
 	background-size: 12px 42px;
 	background-image: url(../images/list-mark2.png);
@@ -178,6 +178,28 @@ img.dropdown-list-image {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+
+}
+aside{
+	min-width:200px;
+	width: 200px;
+}
+.container {
+
+}
 
 
 
