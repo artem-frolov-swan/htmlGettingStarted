@@ -75,7 +75,7 @@ nav .nav  > .nav-title{
 	width: 305px;
 	float: left !important;
 }
-nav .nav  > .nav-title > span.title-icon {
+nav .nav  > .nav-title > a > span.title-icon {
 	background-image: url(../images/light/appbar.base.png), url(../images/light/appbar.people.png);
 	background-repeat: no-repeat;
 	height: 40px;
@@ -85,10 +85,10 @@ nav .nav  > .nav-title > span.title-icon {
 	margin-right: 10px;
 	display: block;
 }
-nav .nav  > .nav-title > p {
+nav .nav  > .nav-title > a > p {
 	font-size: 30px;
 }
-nav .nav  > .nav-title  > p > small {
+nav .nav  > .nav-title  > a > p > small {
 	font-size: 15px;
 }
 nav .nav > ul.menu {
@@ -103,6 +103,8 @@ nav .nav > ul.menu > li {
 	margin-right: 20px;
 	position: relative;
 	font-size: 30px;
+}
+nav .nav > ul.menu > li > a {
 }
 nav .nav > .divider {
 	position: relative;
