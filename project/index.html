@@ -8,9 +8,39 @@
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<script type="text/javascript">
+$(document).ready(function() { 
+$(function() {
+
+    var $sidebar   = $("aside"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 15
+            });
+        }
+    });
+    
+});
+});
+</script>
+
+
 </head>
 <body>
 <div class="global_container">
+
+
+
 <nav>
 	<div class="nav">
 		<div class="nav-title">
@@ -54,6 +84,9 @@
 
 
 <div class="container">
+
+
+
 	<aside>
 	</aside>
 	
@@ -67,9 +100,8 @@
 
 </div>
 </body>
+
 </html>
-
-
 
 
 

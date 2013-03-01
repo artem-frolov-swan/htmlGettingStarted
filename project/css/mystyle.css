@@ -66,6 +66,7 @@ nav {
 	background-position: 50% top;
 	height: 60px;
 	color: #ffffff;
+	
 }
 nav .nav {
 	margin: 5px;
@@ -187,13 +188,17 @@ nav .nav > ul.menu > li > ul.dropdown-menu > li  > a > span.list-mark {
 	height: 1000px;
 	width:900px;
 	border: 3px solid #000;
+	position: relative;
+	
 }
 aside{
 	border: 3px solid #000;
-	
 	min-width:200px;
 	width: 200px;
 	height: 300px;
+	position: absolute;
+	top:0;
+	left:0;
 }
 footer {
 	height: 300px;
