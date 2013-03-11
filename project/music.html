@@ -10,8 +10,8 @@
 <![endif]-->
 
 <script type="text/javascript">
-
 $(document).ready(function() { 
+$(function() {
 
     var $sidebar   = $("aside"), 
         $window    = $(window),
@@ -29,13 +29,9 @@ $(document).ready(function() {
             });
         }
     });
-	$window.scroll();
-
+    
 });
-
-
-
-
+});
 </script>
 
 
@@ -68,12 +64,6 @@ $(document).ready(function() {
 						<a><span class="dropdown-list-image icon-dark"></span><span class="list-mark"></span>Lacuna Coil</a>
 					</li>
 				</ul>
-			</li>
-			<li>
-				<a>Photo</a>
-			</li>
-			<li>
-				<a>Video</a>
 			</li>
 			<li>
 				<a>Contact us</a>
@@ -132,55 +122,6 @@ $(document).ready(function() {
 
 
 <!--
-$(document).ready(function() { 
-
-    var $sidebar   = $("aside"), 
-        $window    = $(window),
-        offset     = $sidebar.offset(),
-        topPadding = 15;
-
-    $window.scroll(function() {
-        if ($window.scrollTop() > offset.top) {
-            $sidebar.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding
-            });
-        } else {
-            $sidebar.stop().animate({
-                marginTop: 15
-            });
-        }
-    });
-	$window.scroll();
-
-});
-
-
-
-
-
-
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="list_of_comments">
 	<div>
 		<h1>Comments</h1>
