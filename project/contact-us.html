@@ -10,35 +10,40 @@
 <![endif]-->
 
 <script type="text/javascript">
+
 $(document).ready(function() { 
-$(function() {
 
     var $sidebar   = $("aside"), 
+		$footer    = $("footer"),
         $window    = $(window),
         offset     = $sidebar.offset(),
-        topPadding = 15;
-
+		fotter_height = parseInt($footer.css('height'));
     $window.scroll(function() {
-        if ($window.scrollTop() > offset.top) {
-            $sidebar.stop().animate({
-                marginTop: $window.scrollTop() - offset.top + topPadding
+		var offset_bottom = ($(document).height() - ($window.scrollTop() + 15 + parseInt($sidebar.css('height'))));
+        if ($window.scrollTop() > offset.top && offset_bottom > (fotter_height + 15)) {
+			$sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + 15
             });
-        } else {
-            $sidebar.stop().animate({
+        } else if ( offset_bottom <= (fotter_height + 15) ) {
+			$sidebar.stop().animate({
+                marginBottom: 15
+            });
+		} else {
+			$sidebar.stop().animate({
                 marginTop: 15
             });
-        }
+		}	
     });
-    
-});
+	$window.scroll();
 });
 </script>
-
-
 </head>
-<body>
-<div class="global_container">
 
+
+<body>
+
+
+<div class="global_container">
 
 
 <nav>
@@ -47,59 +52,68 @@ $(function() {
             <a><span class="title-icon" ></span><p> My 1st project <small>22.02.2013</small></p></a>
 		</div>
 		<div class="divider"></div>
-		<ul class="menu">
+		<ul class="nav-menu">
 			<li>
-				<a>Home</a>
+				<a href="index.html">Home</a>
 			</li>
 			<li>
-				<a>Music</a>
+				<a href="music.html">Music</a>
 				<ul class="dropdown-menu">
 					<li>
-						<a><span class="dropdown-list-image icon-dark"></span><span class="list-mark"></span>Entwine</a>
+						<a href="music.html#entwine"><span class="dropdown-list-image icon-dark"></span><span class="list-mark"></span>Entwine</a>
 					</li>
 					<li>
-						<a><span class="dropdown-list-image icon-dark"></span><span class="list-mark"></span>Nightwish</a>
+						<a href="music.html#nightwish"><span class="dropdown-list-image icon-dark"></span><span class="list-mark"></span>Nightwish</a>
 					</li>
 					<li>
-						<a><span class="dropdown-list-image icon-dark"></span><span class="list-mark"></span>Lacuna Coil</a>
+						<a href="music.html#lacuna-coil"><span class="dropdown-list-image icon-dark"></span><span class="list-mark"></span>Lacuna Coil</a>
 					</li>
 				</ul>
 			</li>
 			<li>
-				<a>Contact us</a>
+				<a href="photo.html">Photo</a>
+			</li>
+			<li>
+				<a href="video.html">Video</a>
+			</li>
+			<li>
+				<a href="contact-us.html">Contact us</a>
 			</li>
 		</ul>
 	</div>
 </nav>
 
 
-
-
-<header>
-	<h1>
-		Metro UI project
-	</h1>
+<header class="chapter">
+	<div class="title">
+		<h1> Contact us </h1>
+	</div>
 </header>
 
 
-
 <div class="container">
-
-
-
 	<aside>
+
 	</aside>
-	
-	
-	
-	
+	<section id="contact-us">
+		<div class="section-title">
+			<h1>Contact us</h1>
+		</div>
+		<div class="section-body">
+		</div>
+	</section>
 </div>
+
 
 <footer>
 </footer>
 
+
 </div>
+
+
 </body>
+
 
 </html>
 
@@ -122,6 +136,48 @@ $(function() {
 
 
 <!--
+
+} else if (($(document).height() - (offset.top + 15 + parseInt($sidebar.css('height')))) < (parseInt($footer.css('height')) + 15)) {
+} else {
+$(document).ready(function() { 
+
+    var $sidebar   = $("aside"), 
+        $window    = $(window),
+        offset     = $sidebar.offset(),
+        topPadding = 15;
+
+    $window.scroll(function() {
+        if ($window.scrollTop() > offset.top) {
+            $sidebar.stop().animate({
+                marginTop: $window.scrollTop() - offset.top + topPadding
+            });
+        } else {
+            $sidebar.stop().animate({
+                marginTop: 15
+            });
+        }
+    });
+	$window.scroll();
+
+});
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+
+
+
 <div class="list_of_comments">
 	<div>
 		<h1>Comments</h1>
