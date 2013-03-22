@@ -36,6 +36,18 @@ $(document).ready(function() {
     });
 	$window.scroll();
 });
+var last_volume_value; 
+function volume_on_off () {
+
+	if(document.getElementById('player').volume > 0){
+		last_volume_value = document.getElementById('player').volume;
+		document.getElementById('player').volume = 0;
+	} else {
+		document.getElementById('player').volume = last_volume_value;
+		last_volume_value = 0;
+	}
+}
+
 </script>
 </head>
 
@@ -113,6 +125,17 @@ $(document).ready(function() {
 				<h1>Entwine</h1>
 			</div>
 			<div class="section-body">
+				<audio id="player" src="01-Soul-Sacrifice.mp3" controls></audio>
+				<div>
+					<button onclick="document.getElementById('player').play()">Play</button>
+					<button onclick="document.getElementById('player').pause()">Pause</button>
+					<button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
+					<button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
+					<button onclick="document.getElementById('player').currentTime-=1">Time -</button>
+					<button onclick="document.getElementById('player').currentTime+=1">Time +</button>
+					<button onclick="volume_on_off()">Volume off/on</button>
+					
+				</div>
 				<p></p>
 			</div>
 		</div>

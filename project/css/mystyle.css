@@ -268,24 +268,45 @@ aside > ul.aside-menu > li  > a > span.list-mark {
 }
 
 
+
+section.home-section {
+	margin: 0;
+	padding: 15px;
+	font-size: 30px;
+}
+section.home-section > .under-section {
+	margin:0;
+	padding:0;
+}
+section.home-section > .under-section > .section-title {
+	margin:0;
+	padding:0;
+}
+section.home-section > .under-section > .section-body {
+	margin:0;
+	padding:0;
+}
 section {
 	margin: 0 0 0 220px;
 	padding: 15px;
 	font-size: 30px;
 }
-section > .under-section{
+section > .under-section {
 	margin:0;
 	padding:0;
 }
-section > .under-section > .section-title{
+section > .under-section > .section-title {
 	margin:0;
 	padding:0;
 }
-section > .under-section > .section-body{
+section > .under-section > .section-body {
 	margin:0;
 	padding:0;
 }
-
+audio{
+    width: 400px;
+	/* background-color: rgba(100,181,233,1); */
+}
 
 
 
