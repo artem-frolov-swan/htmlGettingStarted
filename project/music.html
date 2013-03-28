@@ -48,6 +48,26 @@ function volume_on_off () {
 	}
 }
 
+
+var start = 1000;
+
+function repeat () {
+    document.getElementById('player').currentTime-=1;
+    setTimeout(repeat, start);
+    start = start / 2;
+}
+
+document.getElementById('time_plus_1').mousedown = function() {
+    repeat();
+}
+
+document.getElementById('time_plus_1').mouseup = function () {
+	start = 1000
+    clearTimeout(t);
+}
+
+
+ /* x..1000ms..x..500ms..x..250ms..x */
 </script>
 </head>
 
@@ -132,7 +152,8 @@ function volume_on_off () {
 					<button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
 					<button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
 					<button onclick="document.getElementById('player').currentTime-=1">Time -</button>
-					<button onclick="document.getElementById('player').currentTime+=1">Time +</button>
+					<button id="time_plus_1">Time +</button>
+					
 					<button onclick="volume_on_off()">Volume off/on</button>
 					
 				</div>
