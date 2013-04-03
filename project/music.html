@@ -49,23 +49,22 @@ function volume_on_off () {
 }
 
 
-var start = 1000;
+var time_out, start = 100;
 
 function repeat () {
-    document.getElementById('player').currentTime-=1;
-    setTimeout(repeat, start);
-    start = start / 2;
+    document.getElementById('player').currentTime+=1;
+    time_out = setTimeout(repeat, start);
+    //start = start / 2;
 }
-
-document.getElementById('time_plus_1').mousedown = function() {
-    repeat();
+ window.onload = function () {
+	time_plus_1.onmousedown = function() {
+		repeat();
+	}
+	time_plus_1.onmouseup = function () {
+		start = 1000;
+		clearTimeout(time_out);
+	}
 }
-
-document.getElementById('time_plus_1').mouseup = function () {
-	start = 1000
-    clearTimeout(t);
-}
-
 
  /* x..1000ms..x..500ms..x..250ms..x */
 </script>
@@ -145,12 +144,12 @@ document.getElementById('time_plus_1').mouseup = function () {
 				<h1>Entwine</h1>
 			</div>
 			<div class="section-body">
-				<audio id="player" src="01-Soul-Sacrifice.mp3" controls></audio>
+				<audio id="player" src="01-Soul-Sacrifice.mp3" controls preload="none"></audio>
 				<div>
 					<button onclick="document.getElementById('player').play()">Play</button>
 					<button onclick="document.getElementById('player').pause()">Pause</button>
-					<button onclick="document.getElementById('player').volume+=0.1">Volume Up</button>
-					<button onclick="document.getElementById('player').volume-=0.1">Volume Down</button>
+					<button onclick="document.getElementById('player').volume+=0.05">Volume Up</button>
+					<button onclick="document.getElementById('player').volume-=0.05">Volume Down</button>
 					<button onclick="document.getElementById('player').currentTime-=1">Time -</button>
 					<button id="time_plus_1">Time +</button>
 					
